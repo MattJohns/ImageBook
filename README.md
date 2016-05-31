@@ -37,7 +37,7 @@ Once those are in place the mod should automatically load when you run the game.
 ## Error Log
 If the book is not loading, please check the error log for any messages.  If there is an image missing the book will not load and will
 not display an error to the user in-game.  It will only write error messages to the log file which can be found in your logs folder in the minecraft
-directory, under the name 'fml-client-latest.log' .
+directory, under the name `fml-client-latest.log` .
 
 Search for any messages from 'ImageBook' within that file to find where the error is occuring.  Please contact me if you are not able to
 understand the error message.
@@ -90,7 +90,7 @@ Minecraft GUI scale and screen aspect ratio.
 
 This may cause issues where text is not rendered cleanly due to this automatic scaling of the images that hold the page text.  In the future
 there will be an option to ignore automatic scaling and render the image in exact pixel dimensions instead.  Currently there is the option
-`'isPageKeepAspectRatio` which goes some way to counter the problem of stretching.
+`isPageKeepAspectRatio` which goes some way to counter the problem of stretching.
 
 
 ### Description
@@ -256,7 +256,7 @@ Example:
 The `pageMarginOutside` field specifies the amount of space between the left side of pages and the left side their book (for pages on the left
 hand side), or the right side of pages and the right side of the book (for pages on the right hand side).
 
-In other words in specifies the distance between the edge of the book and the edge of the page.
+In other words it specifies the distance between the edge of the book and the edge of the page.
 
 Note this field uses proportional units, so 0.25 means 25% of the book.
 
@@ -277,7 +277,7 @@ Example:
 The `pageMarginInside` field specifies the amount of space between the right side of pages and the center their book (for pages on the left
 hand side), or the left side of pages and the center of the book (for pages on the right hand side).
 
-In other words in specifies the distance between the center of the book and the edge of the page.
+In other words it specifies the distance between the center of the book and the edge of the page.
 
 Note this field uses proportional units, so 0.25 means 25% of the book.
 
@@ -331,15 +331,31 @@ Example:
 
 
 ### Keep Book Aspect Ratio
-The 'isBookContainerKeepAspectRatio' field is not currently used and should always be set to `true`.
+The `isBookContainerKeepAspectRatio` field is not currently used and should always be set to `true`.
 
 
 ### Keep PageAspect Ratio
-The 'isPageKeepAspectRatio' field is not currently used and should always be set to `true`.
+The `isPageKeepAspectRatio` field is not currently used and should always be set to `true`.
+
+
+### Book Icon
+The 'icon' field contains an icon for the book.  This will be displayed in the player's inventory when they hold
+the book.
+
+Example:
+
+```
+{
+	"bookList": [
+		"icon": {
+		}
+	]
+}
+```
 
 
 ### Book Image
-The 'bookContainerImage' field contains an image for the background of the book.  This should be an image of
+The `bookContainerImage` field contains an image for the background of the book.  This should be an image of
 paper or something similar.  It contains multiple fields that are listed in the `Image` section below.
 
 Example:
@@ -391,7 +407,7 @@ field.
 be used such as `test512x512.png` .
 
 `INTERNAL` - An image that is part of the vanilla Minecraft, or part of a mod that is loaded.  The full name of the image should be used
-such as 'minecraft:chest' .
+such as `minecraft:chest` .
 
 `RESOURCE_PACK` - An image that is part of a resouce pack.  This field is currently not used.
 
@@ -457,16 +473,19 @@ The `repeatRatioX` field specifies how often to repeat the image within the imag
 Note this field is proportional so a value of 3 will repeat the image 3 times.  A value of 0.5 will only draw half of the image.
 
 
-### Image - Repeat Ratio X
-The `repeatRatioX` field specifies how often to repeat the image within the image's layout area, in the vertical direction.
+### Image - Repeat Ratio Y
+The `repeatRatioY` field specifies how often to repeat the image within the image's layout area, in the vertical direction.
 
 Note this field is proportional so a value of 3 will repeat the image 3 times.  A value of 0.5 will only draw half of the image.
 
 ## Example Configuration File
-This file shows an example configuration.  Note it requires a subfolder in your minecraft config directory called `ExampleBook`
+This file shows an example configuration.  Note it requires a subfolder in your minecraft config folder called `ExampleBook`
 which contains 3 images called `Background.png`, `Page1.png` and `Page2.png`.  Any images will do for testing.
 
 The configuration file itself should be named `imagebook.json` and exist in your minecraft config folder.
+
+Please take careful note of the commas and brackets which need to be present otherwise an error will occur.  Refer to the JSON
+specfication for more details or feel free to email me.
 
 Contents of example imagebook.json:
 
