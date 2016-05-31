@@ -110,11 +110,13 @@ something unique so the mod can tell the difference between the books with the s
 
 Example:
 
+```
 {
 	"bookList" : [
 		"nameInternal" : "Example Book"
 	]
 }
+```
 
 ###Display Name
 
