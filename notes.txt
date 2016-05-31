@@ -1,0 +1,19 @@
+- create a MinecraftCommon folder and a common folder
+
+- might need to set normal for all textures in case lighting mods are used
+
+- allow player to look up when reading
+
+- DynamicTexture.setTextureClamped
+
+- allow creative tab to be set, and maybe other parameters for item
+
+- allow empty page names to avoid rendering (e.g. for the inside covers of the book).  
+
+- check if book item id already exists and use that
+
+- generalize into gui mod
+
+- can allow command block events attached to gui clicks
+
+- fontRendererObj , can be used to measure text width

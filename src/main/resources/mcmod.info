@@ -1,0 +1,21 @@
+[
+{
+  "modid": "ImageBook",
+  "name": "ImageBook",
+  "description": "Adds a book to minecraft that can display images.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/MattJohns/ImageBook",
+  "updateUrl": "",
+  "authorList": [
+    "Matt Johns"
+  ],
+  "credits": "matt.johns384@gmail.com",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
