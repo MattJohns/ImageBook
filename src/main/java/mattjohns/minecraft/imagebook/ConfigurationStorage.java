@@ -156,7 +156,7 @@ public class ConfigurationStorage {
 		Configuration returnValue = new Configuration();
 
 		returnValue.descriptionSet("Configuration file for ImageBook mod.");
-		returnValue.helpUrlSet("https://github.com/MattJohns");
+		returnValue.helpUrlSet("https://github.com/MattJohns/Imagebook");
 		returnValue.configurationVersionSet(ConfigurationStorage.CONFIGURATION_VERSION);
 
 		ConfigurationBook book = new ConfigurationBook();
