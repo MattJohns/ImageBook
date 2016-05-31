@@ -5,7 +5,7 @@ import java.io.File;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import org.lwjgl.opengl.GL11;
-import com.sun.prism.impl.TextureResourcePool;
+//import com.sun.prism.impl.TextureResourcePool;
 import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.gui.ScaledResolution;
